@@ -34,7 +34,21 @@ a {
 .btn:hover {
   opacity: 0.9;
 }
+.heading {
+  font-family: var(--font-heading);
+  font-weight: 700;
 
+  letter-spacing: -0.02em;
+  color: #171100;
+}
+.heading.lv1 {
+  font-size: 5.8rem;
+  line-height: 1.17;
+}
+.heading.lv2 {
+  font-size: 3.8rem;
+  line-height: 1.26;
+}
 .main-content {
   width: 1170px;
   max-width: calc(100% - 48px);
@@ -118,7 +132,7 @@ a {
   height: 658px;
   object-fit: cover;
   border-radius: 20px;
-display: block;
+  display: block;
 }
 .hero .hero-summary {
   width: 270px;
@@ -173,14 +187,7 @@ display: block;
   width: 52%;
   padding: 64px 0 0 130px;
 }
-.hero .content-block .heading {
-  font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: 5.8rem;
-  line-height: 1.17;
-  letter-spacing: -0.02em;
-  color: #171100;
-}
+
 .hero .desc {
   margin-top: 22px;
   font-weight: 400;
@@ -237,4 +244,44 @@ display: block;
   line-height: 1.23;
   color: #171100;
   padding: 0 8px 0 28px;
+}
+
+/* ===== Popular */
+
+.popular {
+  padding: 65px 0;
+  margin-top: 135px;
+}
+.popular-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.popular-top .desc {
+  margin-top: 16px;
+  width: 458px;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #5f5b53;
+}
+.popular-top .controls {
+  gap: 18px;
+  display: flex;
+}
+.popular-top .control-btn {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: var(--promary-color);
+  border: 1px solid var(--promary-color);
+  border-radius: 50%;
+  background: transparent;
+}
+.popular-top .control-btn:hover {
+  color: #ffffff;
+  background: var(--promary-color);
+  cursor: pointer;
 }

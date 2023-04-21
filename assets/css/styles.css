@@ -23,7 +23,7 @@ a {
   display: inline-block;
   min-width: 118px;
   padding: 0 16px;
-  line-height: 50px;
+  line-height: 50px; /* thay cho high: 50px*/
   font-weight: 600;
   font-size: 1.6rem;
   text-align: center;
@@ -33,6 +33,7 @@ a {
 }
 .btn:hover {
   opacity: 0.9;
+  cursor: pointer;
 }
 .heading {
   font-family: var(--font-heading);
@@ -269,7 +270,6 @@ a {
   display: flex;
 }
 .popular-top .control-btn {
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -284,4 +284,77 @@ a {
   color: #ffffff;
   background: var(--promary-color);
   cursor: pointer;
+}
+
+.popular .course-list {
+  display: flex;
+  gap: 30px;
+  margin-top: 55px;
+}
+.popular .course-item {
+  flex: 1;
+  background: #ffffff;
+  border: 1px solid #e2dfda;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+.popular .course-item:hover{
+  border-color:transparent ;
+  box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
+}
+.popular .course-item .thumb {
+  width: calc(100% + 2px);
+  height: 278px;
+  margin: -1px;
+  object-fit: cover;
+  border-radius: 12px 12px 0px 0px;
+}
+.popular .course-item .info {
+  padding: 16px 22px 22px 22px;
+}
+.popular .course-item .head,
+.popular .course-item .foot,
+.popular .course-item .rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.popular .course-item .title a{
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #171100;
+}
+.popular .value {
+  display: inline-block;
+  margin-top: 2px;
+  margin-left: 6px;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #fea31b;
+}
+
+.popular .course-item .desc {
+  margin-top: 6px;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  color: #5f5b53;
+}
+.popular .course-item .foot {
+  margin-top: 12px;
+}
+.popular .foot .price {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #171100;
+}
+.popular .foot .book-btn {
+  border: 0px;
+}
+.popular .foot .book-btn:hover {
+  background-color: var(--promary-color);
+  color: #ffffff;
 }

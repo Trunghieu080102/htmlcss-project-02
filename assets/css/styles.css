@@ -50,13 +50,24 @@ a {
   font-size: 3.8rem;
   line-height: 1.26;
 }
+.line-clamp {
+  display: -webkit-box ;
+  -webkit-line-clamp: var(--line-clamp,1) ;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line-clamp.line-2{
+  --line-clamp:2;
+}
 .main-content {
   width: 1170px;
   max-width: calc(100% - 48px);
   margin-left: auto;
   margin-right: auto;
 }
-
+.word-break-all {
+  word-break: break-all;
+}
 /* Header */
 .header {
   background: #fffcf4;
@@ -320,6 +331,7 @@ a {
   align-items: center;
 }
 .popular .course-item .title a{
+  padding-right: 6px;
   font-weight: 600;
   font-size: 1.8rem;
   line-height: 1.67;
